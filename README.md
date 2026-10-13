@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 <img width="712" height="174" alt="Recon Banner" src="https://github.com/user-attachments/assets/7fb9c87b-6872-423b-a724-8affc76eee69" />
 
@@ -10,15 +10,25 @@
 
 ### *The local-first engineering command center powered by 25 specialized agent brains.*
 
-**Zero Code Egress • Fail-Closed Governance • Sandboxed Verification • Single Portable .exe**
+**Zero Code Egress • Fail-Closed Governance • Sandboxed Verification • Instant npx Launch**
 
 <br />
 
-[![Version](https://img.shields.io/badge/version-1.0.0-0ea5e9?style=for-the-badge&logo=semver&logoColor=white)](./CHANGELOG.md)
-[![Platform](https://img.shields.io/badge/platform-Windows_x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](./docs/user-guide.md)
-[![Security](https://img.shields.io/badge/security-fail--closed-10b981?style=for-the-badge&logo=shield&logoColor=white)](./SECURITY.md)
-[![Architecture](https://img.shields.io/badge/runtime-local--first-8b5cf6?style=for-the-badge)](./docs/product-overview.md)
-[![License](https://img.shields.io/badge/license-Digi_Tracks-64748b?style=for-the-badge)](mailto:digi.tracks@outlook.com)
+[![npm version](https://img.shields.io/npm/v/@reconscanner/recon?style=for-the-badge&logo=npm&logoColor=white&color=CB3837)](https://www.npmjs.com/package/@reconscanner/recon)
+[![Platform](https://img.shields.io/badge/platform-Windows_x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/chandrahotha/Recon_SDLC_Agentic_Tool-P)
+[![Security](https://img.shields.io/badge/security-100%25_local--first-10b981?style=for-the-badge&logo=shield&logoColor=white)](https://github.com/chandrahotha/Recon_SDLC_Agentic_Tool-P)
+[![Architecture](https://img.shields.io/badge/agents-25_specialized_brains-8b5cf6?style=for-the-badge)](https://github.com/chandrahotha/Recon_SDLC_Agentic_Tool-P)
+[![License](https://img.shields.io/badge/license-Digi_Tracks_Proprietary-64748b?style=for-the-badge)](mailto:digi.tracks@outlook.com)
+
+<br />
+
+### 🚀 Instant Launch (Zero Installation Required)
+
+```bash
+npx @reconscanner/recon
+```
+
+*(Downloads the lightweight ~9.5 MB runner and launches the native Recon desktop command center immediately on Windows.)*
 
 <br />
 
@@ -27,7 +37,7 @@
 
 <br />
 
-[Product Overview](./docs/product-overview.md) • [Features](./docs/features.md) • [Use Cases](./docs/use-cases.md) • [User Guide](./docs/user-guide.md) • [FAQ](./docs/faq.md) • [Changelog](./CHANGELOG.md) • [Security](./SECURITY.md)
+[Quickstart](#-how-to-use-recon) • [The 25 Agent Brains](#-the-25-specialized-agent-brains) • [Cockpit Command Center](#-command-center-cockpit) • [Enterprise Security](#-enterprise-security--privacy-first) • [Request Enterprise Pilot](#-enterprise-pilots--commercial-licensing)
 
 </div>
 
@@ -35,30 +45,49 @@
 
 ## ⚡ What is Recon?
 
-**Recon** is an autonomous, local-first desktop command center for engineering teams. It orchestrates **25 specialized AI agent brains** across every phase of the Software Development Life Cycle (SDLC)—from architecture and security static analysis to verified automated patch generation and release readiness.
+**Recon** is an autonomous, local-first engineering command center designed for engineering teams, architects, and security leads. It orchestrates **25 specialized AI agent brains** across every phase of the Software Development Life Cycle (SDLC)—from discovery and architecture design to automated static analysis (SAST), database migrations, and compile-verified patch generation.
 
-Built as a single, self-contained desktop executable, Recon runs directly on your workstation without transmitting source code to third-party cloud services.
-
-### Core Architectural Pillars
-
-- 🔒 **100% Local-First & Zero Code Egress**  
-  Source code parsing, AST indexing, security analysis, and diff generation execute locally. Code never leaves your machine unless you explicitly connect an external LLM endpoint.
-
-- 🧠 **25 Dedicated Agent Brains**  
-  Specialized, role-based agents collaborate across distinct lifecycle phases rather than relying on generic, monolithic prompts.
-
-- 🛡️ **Fail-Closed Governance & Contracts**  
-  Every agent operates under declarative contract constraints. Undeclared outputs, unauthorized writes, or missing validations immediately halt execution.
-
-- 🧪 **Sandboxed Worktree Verification**  
-  Code modifications are isolated within temporary Git worktrees. Every proposed change is compiled and validated prior to human presentation, with atomic rollback on failure.
-
-- 👨‍💻 **Human-in-the-Loop Decision Gates**  
-  Developers retain total control. Inspect syntax-tinted line-by-line diffs, evaluate categorized findings, and approve or reject changes with a single click.
+Unlike cloud-based AI tools that ingest your proprietary codebase into remote servers, Recon is **100% local-first**: your source code never leaves your workstation.
 
 ---
 
-## 🧭 The 25 Agent Lifecycle Matrix
+## 🚀 How to Use Recon
+
+### Step 1: Launch the Cockpit
+Run the one-line command in any terminal:
+```bash
+npx @reconscanner/recon
+```
+*(Or install globally: `npm install -g @reconscanner/recon` and simply run `recon`)*
+
+### Step 2: Connect Your Repository
+In the **PROJECT** panel:
+1. Enter your project name.
+2. Select or enter your local repository path (e.g., `C:\Projects\my-app`).
+3. Click **Register & Connect**.
+
+### Step 3: Choose Your Model Gateway
+Recon operates fully offline for repo scanning and AST analysis. To enable multi-agent reasoning:
+* **Option A: 100% Air-Gapped via Local Ollama / LM Studio** (Recommended for total privacy)  
+  Point Recon to `http://localhost:11434/v1`. Zero source code or tokens leave your PC.
+* **Option B: Cloud Providers (NVIDIA NIM, OpenAI, Anthropic, Gemini)**  
+  Enter your API key under **Settings → Provider Credentials**. All keys are encrypted at rest using Windows DPAPI (bound to your Windows account) and never saved in plaintext.
+
+### Step 4: Run Autonomous SDLC Pipeline
+Click **Start Autonomous SDLC Run**:
+* Watch the **25-Brain Telemetry Strip** (*pulsing cyan = scanning, emerald = passed, amber = quality gate, ruby = failed*).
+* Stream agent thoughts in real-time through the terminal reasoning window.
+
+### Step 5: Review Verified Patches & Export Reports
+* **Patch Review**: Inspect syntax-tinted git diffs with exact line numbers and `+added`/`-removed` stats. Accept or reject with one click.
+* **Findings Browser**: Filter vulnerabilities and code smells by severity (*Critical, High, Medium, Low*).
+* **Compliance Reports**: Export print-to-PDF ready, self-contained HTML audit reports containing executive verdicts, gate results, and evidence lineage.
+
+---
+
+## 🧠 The 25 Specialized Agent Brains
+
+Recon organizes the development lifecycle across 5 high-efficiency stages:
 
 ```mermaid
 flowchart LR
@@ -68,93 +97,63 @@ flowchart LR
     D --> E["5. DevOps & Release"]
 ```
 
-| Lifecycle Stage | Agent Brain | Core Responsibility |
-| :--- | :--- | :--- |
-| **1. Discovery & Strategy** | `idea` | Explores problem domain, architectural constraints, and risk factors |
-| | `discovery` | Scans workspace, detects frameworks, extracts AST and dependency maps |
-| | `requirements` | Formulates structured user stories, acceptance criteria, and quality gates |
-| **2. Architecture & Design** | `architecture` | Establishes component topologies, system boundaries, and ADR records |
-| | `planning` | Generates dependency task graphs and milestone sequencing |
-| | `ux-design` | Validates interaction flows, layout systems, and accessibility guidelines |
-| **3. Implementation** | `coding-orchestrator`| Distributes implementation tasks across isolated Git worktrees |
-| | `frontend-coding` | Develops responsive UI components, state management, and design systems |
-| | `backend-coding` | Implements domain models, API endpoints, business logic, and validation |
-| | `database` | Generates safe zero-downtime migrations, schema indexes, and query plans |
-| | `refactoring-debt` | Identifies code complexity hotspots, technical debt, and safe refactoring paths |
-| **4. Quality & Security** | `testing` | Creates comprehensive unit, integration, property, and regression suites |
-| | `security` | Performs static analysis (SAST), secret detection, and vulnerability audit |
-| | `compliance` | Validates open-source license governance, headers, and privacy rules |
-| | `performance` | Analyzes execution bottlenecks, memory footprint, and query complexity |
-| | `accessibility-i18n` | Audits WCAG 2.1 AA compliance, screen reader support, and localization |
-| | `code-review` | Executes cross-discipline peer review against architectural contracts |
-| **5. DevOps & Release** | `documentation` | Generates OpenAPI specifications, developer guides, and changelogs |
-| | `devops-cicd` | Produces production Dockerfiles, CI/CD pipelines, and infrastructure checks |
-| | `finops` | Models cloud infrastructure costs and rightsizing recommendations |
-| | `observability` | Instruments OpenTelemetry tracing, Prometheus metrics, and structured logs |
-| | `incident-triage` | Correlates error telemetry with git revisions for root-cause analysis |
-| | `release` | Verifies release artifacts, semantic versioning, and build checklists |
-| **Continuous Learning** | `learning` | Synthesizes project-specific heuristics from successful patch cycles |
-| | `continuous-improvement`| Recommends systemic architectural enhancements over time |
+| Phase | Brain | Core Mission | Code Write | Sandbox Exec |
+| :--- | :--- | :--- | :---: | :---: |
+| **Discovery & Strategy** | `idea` | Explores problem domain, edge cases, and risk factors | ❌ | ❌ |
+| | `discovery` | AST repository indexing, framework detection, and fingerprinting | ❌ | ✅ *(scan)* |
+| | `requirements` | Formulates testable user stories and quality gates | ❌ | ❌ |
+| **Architecture & Design** | `architecture` | Component topology, system boundaries, and ADR records | ❌ | ❌ |
+| | `planning` | Dependency task graphs and milestone execution schedules | ❌ | ❌ |
+| | `ux-design` | UI interaction flows, design systems, and WCAG specs | ❌ | ❌ |
+| **Implementation** | `coding-orchestrator`| Distributes tasks across isolated Git worktrees | ❌ | ❌ |
+| | `frontend-coding` | Responsive UI components, state logic, and accessibility | ✅ *(patch)* | ✅ *(build)* |
+| | `backend-coding` | Domain models, REST/gRPC endpoints, and service logic | ✅ *(patch)* | ✅ *(build)* |
+| | `database` | Zero-downtime migrations, schema constraints, and query plans | ✅ *(patch)* | ✅ *(test)* |
+| | `refactoring-debt` | Identifies complexity hotspots and safe refactoring paths | ❌ | ❌ |
+| **Quality & Security** | `testing` | Unit, integration, property, and regression test suites | ❌ | ✅ *(test)* |
+| | `security` | Static analysis (SAST), secret discovery, and CVE mitigation | ❌ | ❌ |
+| | `compliance` | Open-source license governance and privacy rules | ❌ | ❌ |
+| | `performance` | Complexity profiling, memory footprint, and latency audits | ❌ | ❌ |
+| | `accessibility-i18n` | WCAG 2.1 AA audits, screen reader support, and localization | ❌ | ❌ |
+| | `code-review` | Cross-discipline peer review against architectural contracts | ❌ | ❌ |
+| **DevOps & Release** | `documentation` | OpenAPI specifications, developer docs, and changelogs | ❌ | ❌ |
+| | `devops-cicd` | Production Dockerfiles, GitHub Actions/GitLab CI pipelines | ❌ | ❌ |
+| | `finops` | Cloud resource rightsizing and cost optimization | ❌ | ❌ |
+| | `observability` | OpenTelemetry tracing, Prometheus metrics, and structured logs | ❌ | ❌ |
+| | `incident-triage` | Correlates runtime error telemetry with git revisions | ❌ | ❌ |
+| | `release` | Release packaging, semantic versioning, and build checklists | ❌ | ❌ |
+| **Continuous Learning** | `learning` | Synthesizes project heuristics from verified runs | ❌ | ❌ |
+| | `continuous-improvement`| Recommends systemic architectural upgrades over time | ❌ | ❌ |
 
 ---
 
-## 🖥️ Command Center Cockpit
+## 🛡️ Enterprise Security & Privacy-First
 
-The Recon interface delivers a high-density, aerospace-inspired desktop cockpit engineered for professional developer workflows:
-
-- **25-Brain Telemetry Strip**: Instant visual recognition of agent status (*cyan pulse = scanning, emerald = passed, amber = blocked, orange = skipped, ruby = failed*).
-- **Live Reasoning Stream**: Watch agent thoughts and model reasoning stream in real time via Server-Sent Events (SSE).
-- **Interactive Patch Review**: View real git-diff comparisons with line numbers, `+added`/`-removed` badges, and one-click copy.
-- **Findings & Evidence Browser**: Filter security advisories, code smells, and quality issues with direct drill-down into source lines.
-- **One-Click Audit Reports**: Export standalone, offline-ready HTML/PDF audit summaries complete with executive scores, quality gates, and evidence chains.
-- **Hardware-Encrypted Keys**: Sensitive credentials are encrypted via Windows DPAPI—never saved in plaintext or transmitted to the frontend.
+- **Zero Egress Architecture**: All repository files, AST parsing, and SQLite artifact storage remain on your local machine.
+- **Windows DPAPI Credential Protection**: API keys are encrypted at rest using Windows DPAPI (tied to your Windows user account)—never stored in plaintext or exposed to the UI renderer.
+- **Sandboxed Worktree Execution**: Automated code generation executes in isolated, ephemeral Git worktrees with mandatory compilation checks and atomic rollback protection.
+- **Fail-Closed Governance**: Every agent brain is governed by strict declarative contracts. Unauthorized writes or missing validation criteria halt execution immediately.
 
 ---
 
-## 🚀 Quickstart Guide
+## 💼 Enterprise Pilots & Commercial Licensing
 
-Recon is distributed as a single self-contained desktop executable for Windows.
+Recon is available for enterprise evaluation and pilot deployments:
 
-### 1. Download & Launch
-1. Download `recon-sdlc.exe` from the [Releases](https://github.com/chandrahotha/Recon_SDLC_Agentic_Tool-P/releases) section.
-2. Verify the SHA-256 checksum against our published release notes.
-3. Launch `recon-sdlc.exe` directly (no installer required).
+* **Custom Agent Brains**: Trained on your private architectural guidelines, coding standards, and internal frameworks.
+* **Team Governance & Control Plane**: Centralized audit trails, SSO/SAML integration, and team-wide policy enforcement.
+* **On-Premise & Air-Gapped Deployments**: Dedicated enterprise setup for regulated defense, financial, and healthcare codebases.
 
-### 2. Connect Your Project
-In the **PROJECT** panel:
-- Enter your project name.
-- Provide the local directory path of your repository.
-- Click **Register & Connect**.
-
-### 3. Configure Your LLM Endpoint
-Recon supports both local air-gapped models and cloud providers:
-- **Local (100% Offline)**: Ollama / LM Studio (`http://localhost:11434/v1`) — zero data leaves your PC.
-- **Cloud Gateways**: NVIDIA NIM, OpenAI, OpenRouter, Google Gemini (credentials stored via Windows DPAPI).
-
-For detailed walkthroughs, see the [User Guide](./docs/user-guide.md).
+### 📬 Request an Enterprise Pilot
+Contact the Digi Tracks engineering team directly:  
+📧 **[digi.tracks@outlook.com](mailto:digi.tracks@outlook.com?subject=Recon%20Enterprise%20Pilot%20Inquiry)**
 
 ---
-
-## 📦 Verified Binary Distribution
-
-| Binary Name | Platform | Type | SHA-256 Checksum |
-| :--- | :--- | :--- | :--- |
-| `recon-sdlc.exe` | Windows x64 (10/11) | Portable Executable | `AC96AA010C3FF8052514B4A6FD257DAE88FC43D721FBB6FE1B3722882B76C40C` |
-
-*Note: Pre-compiled binaries are officially published through [GitHub Releases](https://github.com/chandrahotha/Recon_SDLC_Agentic_Tool-P/releases).*
-
----
-
-## 📄 License & Commercial Inquiries
-
-**Proprietary — © 2026 Digi Tracks. All rights reserved.**
-
-Recon — SDLC Agentic Tool is proprietary software developed by **Digi Tracks**. This public showcase repository is provided strictly for product evaluation, architectural transparency, and commercial demonstration purposes.
-
-For enterprise licensing, commercial trials, or bespoke agent integrations:  
-📧 **[digi.tracks@outlook.com](mailto:digi.tracks@outlook.com)**
 
 <div align="center">
-<br />
-<sub>Built by <strong>Digi Tracks</strong> — Engineering intelligence delivered directly to your desktop.</sub>
+
+**Proprietary — © 2026 Digi Tracks. All rights reserved.**  
+<sub>Engineering intelligence delivered directly to your desktop.</sub>
+
 </div>
+
