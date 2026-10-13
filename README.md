@@ -1,16 +1,16 @@
-﻿<div align="center">
+<div align="center">
 
-<img width="712" height="174" alt="Recon Banner" src="https://github.com/user-attachments/assets/7fb9c87b-6872-423b-a724-8affc76eee69" />
+<img width="712" height="174" alt="Recon — Autonomous SDLC Agentic Tool Banner" src="https://github.com/user-attachments/assets/7fb9c87b-6872-423b-a724-8affc76eee69" />
 
 <br />
 
-<img src="./assets/recon-logo.png" alt="Recon Logo" width="130" />
+<img src="https://raw.githubusercontent.com/chandrahotha/Recon_SDLC_Agentic_Tool-P/main/assets/recon-logo.png" alt="Recon Autonomous SDLC Agentic Tool Official Logo" width="130" />
 
 # Recon — Autonomous SDLC Agentic Tool
 
-### *The local-first engineering command center powered by 25 specialized agent brains.*
+### *The local-first AI software engineering command center powered by 25 specialized agent brains.*
 
-**Zero Code Egress • Fail-Closed Governance • Sandboxed Verification • Instant npx Launch**
+**Zero Code Egress • Fail-Closed Governance • Compiler-Verified Patches • Instant npx Launch**
 
 <br />
 
@@ -28,16 +28,16 @@
 npx @reconscanner/recon
 ```
 
-*(Downloads the lightweight ~9.5 MB runner and launches the native Recon desktop command center immediately on Windows.)*
+*(Instantly downloads the lightweight ~9.5 MB runner and launches the native Recon desktop cockpit on Windows 10/11 x64.)*
 
 <br />
 
-<img width="1902" height="672" alt="Recon Desktop Cockpit" src="https://github.com/user-attachments/assets/1469e22b-ff26-4c8d-9f33-d172f7e7ecbe" />
-<img width="1886" height="665" alt="Recon Real-Time Stream and Findings" src="https://github.com/user-attachments/assets/b3021360-ef52-4c8a-8351-b3167ff13e27" />
+<img width="1902" height="672" alt="Recon Desktop Cockpit — 25 Agent Brains Telemetry Strip" src="https://github.com/user-attachments/assets/1469e22b-ff26-4c8d-9f33-d172f7e7ecbe" />
+<img width="1886" height="665" alt="Recon Real-Time Agent Stream, Findings Browser, and Verified Git Patch Review" src="https://github.com/user-attachments/assets/b3021360-ef52-4c8a-8351-b3167ff13e27" />
 
 <br />
 
-[Quickstart](#-how-to-use-recon) • [The 25 Agent Brains](#-the-25-specialized-agent-brains) • [Cockpit Command Center](#-command-center-cockpit) • [Enterprise Security](#-enterprise-security--privacy-first) • [Request Enterprise Pilot](#-enterprise-pilots--commercial-licensing)
+[Quickstart](#-how-to-use-recon) • [Why Local-First?](#-why-local-first-zero-code-egress-vs-cloud-ai) • [The 25 Agent Brains](#-the-25-specialized-agent-brains) • [Enterprise Security](#-enterprise-security--privacy-first) • [Request Enterprise Pilot](#-enterprise-pilots--commercial-licensing)
 
 </div>
 
@@ -45,38 +45,51 @@ npx @reconscanner/recon
 
 ## ⚡ What is Recon?
 
-**Recon** is an autonomous, local-first engineering command center designed for engineering teams, architects, and security leads. It orchestrates **25 specialized AI agent brains** across every phase of the Software Development Life Cycle (SDLC)—from discovery and architecture design to automated static analysis (SAST), database migrations, and compile-verified patch generation.
+**Recon** is an autonomous, **local-first AI engineering command center** designed for software engineers, architects, security leaders, and DevOps teams. Rather than acting as a generic chat interface, Recon coordinates **25 specialized AI agent brains** across every phase of the Software Development Life Cycle (SDLC)—from initial discovery and architectural boundary modeling to automated static analysis (SAST), zero-downtime database migrations, and compiler-verified patch generation in isolated Git worktrees.
 
-Unlike cloud-based AI tools that ingest your proprietary codebase into remote servers, Recon is **100% local-first**: your source code never leaves your workstation.
+Recon is engineered with a strict **Zero Code Egress** philosophy: your proprietary source code, AST indexes, and repository history remain 100% on your local machine.
+
+---
+
+## 🛡️ Why Local-First? (Zero Code Egress vs Cloud AI)
+
+| Capability | Cloud AI Assistants (Copilot, Cursor) | Recon Autonomous SDLC Tool |
+| :--- | :---: | :---: |
+| **Code Privacy & Egress** | ⚠️ Source code sent to third-party cloud servers | ✅ **100% Local-First** — Zero source code egress |
+| **Air-Gapped Operation** | ❌ Requires continuous internet connection | ✅ Fully functional with local LLMs (Ollama / LM Studio) |
+| **Multi-Agent Orchestration** | ❌ Single generic conversational prompt | ✅ **25 Specialized Brains** collaborating across SDLC stages |
+| **Patch Safety & Verification** | ❌ Blind text suggestions without compilation check | ✅ **Sandboxed Git Worktrees** with atomic rollback |
+| **Credential Protection** | ⚠️ Plaintext `.env` files or browser cookies | ✅ **Windows DPAPI** hardware-bound encryption at rest |
+| **Audit & Governance** | ❌ Transient chat logs | ✅ Standalone HTML & PDF compliance reports with evidence lineage |
 
 ---
 
 ## 🚀 How to Use Recon
 
 ### Step 1: Launch the Cockpit
-Run the one-line command in any terminal:
+Execute the one-line command in any PowerShell or Command Prompt terminal:
 ```bash
 npx @reconscanner/recon
 ```
-*(Or install globally: `npm install -g @reconscanner/recon` and simply run `recon`)*
+*(Or install globally: `npm install -g @reconscanner/recon` and run `recon`)*
 
-### Step 2: Connect Your Repository
+### Step 2: Connect Your Local Repository
 In the **PROJECT** panel:
 1. Enter your project name.
 2. Select or enter your local repository path (e.g., `C:\Projects\my-app`).
-3. Click **Register & Connect**.
+3. Click **Register & Connect**. Recon immediately runs local AST indexing and repository fingerprinting.
 
 ### Step 3: Choose Your Model Gateway
 Recon operates fully offline for repo scanning and AST analysis. To enable multi-agent reasoning:
 * **Option A: 100% Air-Gapped via Local Ollama / LM Studio** (Recommended for total privacy)  
-  Point Recon to `http://localhost:11434/v1`. Zero source code or tokens leave your PC.
-* **Option B: Cloud Providers (NVIDIA NIM, OpenAI, Anthropic, Gemini)**  
-  Enter your API key under **Settings → Provider Credentials**. All keys are encrypted at rest using Windows DPAPI (bound to your Windows account) and never saved in plaintext.
+  Point Recon to `http://localhost:11434/v1`. Zero tokens leave your workstation.
+* **Option B: Cloud Providers (NVIDIA NIM, OpenAI, Anthropic, Google Gemini)**  
+  Enter your API credentials in **Settings → Provider Credentials**. Credentials are encrypted at rest using Windows DPAPI (tied to your Windows user account) and never stored in plaintext.
 
 ### Step 4: Run Autonomous SDLC Pipeline
 Click **Start Autonomous SDLC Run**:
 * Watch the **25-Brain Telemetry Strip** (*pulsing cyan = scanning, emerald = passed, amber = quality gate, ruby = failed*).
-* Stream agent thoughts in real-time through the terminal reasoning window.
+* Stream agent thoughts and reasoning in real time via local Server-Sent Events (SSE).
 
 ### Step 5: Review Verified Patches & Export Reports
 * **Patch Review**: Inspect syntax-tinted git diffs with exact line numbers and `+added`/`-removed` stats. Accept or reject with one click.
@@ -87,7 +100,7 @@ Click **Start Autonomous SDLC Run**:
 
 ## 🧠 The 25 Specialized Agent Brains
 
-Recon organizes the development lifecycle across 5 high-efficiency stages:
+Recon structures your software development lifecycle across 5 high-efficiency stages:
 
 ```mermaid
 flowchart LR
@@ -129,7 +142,7 @@ flowchart LR
 
 ## 🛡️ Enterprise Security & Privacy-First
 
-- **Zero Egress Architecture**: All repository files, AST parsing, and SQLite artifact storage remain on your local machine.
+- **Zero Egress Architecture**: All repository files, AST parsing, and SQLite artifact storage remain on your local workstation.
 - **Windows DPAPI Credential Protection**: API keys are encrypted at rest using Windows DPAPI (tied to your Windows user account)—never stored in plaintext or exposed to the UI renderer.
 - **Sandboxed Worktree Execution**: Automated code generation executes in isolated, ephemeral Git worktrees with mandatory compilation checks and atomic rollback protection.
 - **Fail-Closed Governance**: Every agent brain is governed by strict declarative contracts. Unauthorized writes or missing validation criteria halt execution immediately.
@@ -156,4 +169,3 @@ Contact the Digi Tracks engineering team directly:
 <sub>Engineering intelligence delivered directly to your desktop.</sub>
 
 </div>
-
